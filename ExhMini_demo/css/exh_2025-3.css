@@ -1055,6 +1055,13 @@ ol#default li{
   font: 700 21px "微軟正黑體", "黑體";
 }
 
+.exhMini-box-right h1 {
+   display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
 /* media */
 @media (min-width: 768px) {
   .exhMini-box-left,
@@ -1210,7 +1217,7 @@ ol#default li{
   }
 
   .exhMini-box-right{
-    width: 52%;
+    width: 56%;
     margin: auto 30px auto 20px;
   }
 
@@ -1339,6 +1346,14 @@ ol#default li{
   .exhMini-box-right .price {
     font: 700 30px  "Noto Sans TC", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
   }
+
+  .exhMini-box-right h1 {
+     display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+  }
+
 }
 
 
