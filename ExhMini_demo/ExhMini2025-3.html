@@ -71,7 +71,7 @@
     <link rel="stylesheet" href="./css/flatpickr.css" />
     <!-- ExhMini -->
     <link rel="stylesheet" href="./css/ExhMini.css" />
-    <link rel="stylesheet" href="./css/exh_2025-3.css" />
+    <link rel="stylesheet" href="./css/exh_2025.css" />
     <link rel="stylesheet" href="./css/list_2025.css" />
   </head>
 
@@ -2008,7 +2008,7 @@
                         13天一島一飯店 亞德里亞海之島嶼遇見愛~克‧斯‧蒙 13天
                       </h1>
                       <h3>
-                        克羅埃西亞．斯洛維尼亞．波士尼亞【土耳其航空雙點進出】
+                        克羅埃西亞．斯洛維尼亞．波士尼亞【土耳其航空雙點進出克羅埃西亞．斯洛維尼亞．波士尼亞【土耳其航空雙點進出克羅埃西亞．斯洛維尼亞．波士尼亞【土耳其航空雙點進出】
                       </h3>
                       <ol id="default" class="space-price-box">
                         <li>雙點進出</li>
@@ -3556,6 +3556,23 @@
               items: 4,
             },
           },
+        });
+      </script>
+
+      <!-- 促銷方案限字數 -->
+      <script>
+        $(function () {
+          var len = 65; // 超過65個字以""隱藏
+          $(".exhMini-box-right h3").each(function (i) {
+            if ($(this).text().length > len) {
+              $(this).attr("title", $(this).text());
+              var text =
+                $(this)
+                  .text()
+                  .substring(0, len - 1) + "";
+              $(this).text(text);
+            }
+          });
         });
       </script>
 
